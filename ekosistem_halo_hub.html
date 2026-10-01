@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Diagram Ekosistem Telkomsel Halo Hub</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+</head>
+<body class="bg-transparent text-[var(--foreground)] antialiased p-3 font-sans">
+  <div class="bg-[var(--card)] text-[var(--foreground)] border border-[var(--border)] rounded-2xl p-5 shadow-md max-w-5xl mx-auto">
+    
+    <!-- Header with Scenario Toggles -->
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-[var(--border)] pb-4 mb-4">
+      <div>
+        <div class="flex items-center gap-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-rose-600 animate-pulse"></span>
+          <span class="text-xs font-bold tracking-wider uppercase text-rose-600">Interactive Ecosystem Map</span>
+        </div>
+        <h2 class="text-lg font-bold text-[var(--foreground)] mt-0.5">Ekosistem Digital Telkomsel Halo Hub</h2>
+        <p class="text-xs text-[var(--muted-foreground)]">Visualisasi alur konversi Web-First & sinkronisasi omnichannel</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="flex items-center gap-1.5 bg-slate-100 dark:bg-slate-800/80 p-1 rounded-xl border border-[var(--border)]">
+        <button id="btn-all" onclick="setMode('all')" class="px-3 py-1.5 text-xs font-semibold rounded-lg transition-all bg-white dark:bg-slate-700 text-rose-600 shadow-sm">
+          Semua Alur
+        </button>
+        <button id="btn-new" onclick="setMode('new')" class="px-3 py-1.5 text-xs font-medium rounded-lg transition-all text-slate-600 dark:text-slate-300 hover:text-rose-600">
+          ⚡ Pasang Baru (eSIM 5G)
+        </button>
+        <button id="btn-p2p" onclick="setMode('p2p')" class="px-3 py-1.5 text-xs font-medium rounded-lg transition-all text-slate-600 dark:text-slate-300 hover:text-rose-600">
+          🔄 Pre-to-Post (Optima)
+        </button>
+      </div>
+    </div>
+
+    <!-- Active Mode Notification Banner -->
+    <div id="mode-desc" class="mb-4 p-2.5 rounded-lg text-xs bg-rose-50 dark:bg-rose-950/30 border border-rose-200 dark:border-rose-900 text-rose-900 dark:text-rose-200 flex items-center justify-between">
+      <span id="desc-text"><strong>Mode Semua Alur:</strong> Menampilkan relasi lengkap dari pemicu trafik, Page 1 Showcase, Page 2 Catalog, hingga pemenuhan sistem & retensi.</span>
+      <span class="text-[10px] font-mono opacity-80">Klik kartu untuk detail</span>
+    </div>
+
+    <!-- 5-Stage Horizontal Visual Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-3 relative">
+      
+      <!-- STAGE 1: INGESTION -->
+      <div id="col-1" class="flex flex-col gap-2.5 transition-all duration-300">
+        <div class="text-[11px] font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1">
+          <span class="w-4 h-4 rounded-full bg-slate-200 dark:bg-slate-700 text-[10px] flex items-center justify-center font-mono">1</span>
+          Trafik Ingestion
+        </div>
+
+        <div id="card-ads" class="p-3 rounded-xl border border-[var(--border)] bg-slate-50 dark:bg-slate-800/40 text-xs shadow-sm hover:border-rose-400 transition-all cursor-pointer">
+          <div class="flex items-center justify-between mb-1">
+            <span class="font-bold text-slate-800 dark:text-slate-100">Paid Ads (Meta/Google)</span>
+            <span class="text-[9px] bg-blue-100 text-blue-700 font-bold px-1.5 py-0.5 rounded">eSIM & 5G</span>
+          </div>
+          <p class="text-[11px] text-slate-500 leading-tight">Targeted keywords & device model ads (iPhone/Galaxy).</p>
+        </div>
+
+        <div id="card-organic" class="p-3 rounded-xl border border-[var(--border)] bg-slate-50 dark:bg-slate-800/40 text-xs shadow-sm hover:border-rose-400 transition-all cursor-pointer">
+          <div class="font-bold text-slate-800 dark:text-slate-100 mb-1">Organic & Direct</div>
+          <p class="text-[11px] text-slate-500 leading-tight">Pencarian Google & navigasi web telkomsel.com.</p>
+        </div>
+
+        <div id="card-crm" class="p-3 rounded-xl border border-[var(--border)] bg-slate-50 dark:bg-slate-800/40 text-xs shadow-sm hover:border-rose-400 transition-all cursor-pointer">
+          <div class="flex items-center justify-between mb-1">
+            <span class="font-bold text-slate-800 dark:text-slate-100">SMS / WA / MyT Push</span>
+            <span class="text-[9px] bg-emerald-100 text-emerald-700 font-bold px-1.5 py-0.5 rounded">P2P CRM</span>
+          </div>
+          <p class="text-[11px] text-slate-500 leading-tight">Membawa <em>Tokenized Magic-Link</em> langsung ke nomor pengguna.</p>
+        </div>
+      </div>
+
+      <!-- STAGE 2: PAGE 1 SHOWCASE -->
+      <div id="col-2" class="flex flex-col gap-2.5 transition-all duration-300">
+        <div class="text-[11px] font-bold uppercase tracking-wider text-rose-500 flex items-center gap-1">
+          <span class="w-4 h-4 rounded-full bg-rose-100 dark:bg-rose-900/60 text-rose-600 text-[10px] flex items-center justify-center font-mono">2</span>
+          Page 1: Showcase Hub
+        </div>
+
+        <div id="card-p1" class="p-3 rounded-xl border-2 border-rose-200 dark:border-rose-900/60 bg-white dark:bg-slate-800 text-xs shadow-sm flex-1 flex flex-col justify-between">
+          <div>
+            <div class="font-bold text-rose-600 mb-1 flex items-center justify-between">
+              <span>telkomsel.com/halo</span>
+              <span class="text-[9px] bg-rose-100 text-rose-700 font-bold px-1.5 py-0.5 rounded">Master Hub</span>
+            </div>
+            <p class="text-[11px] text-slate-600 dark:text-slate-300 mb-2 font-medium">Single Authority & Education Layer:</p>
+            <ul class="text-[10.5px] text-slate-500 space-y-1 list-disc pl-3">
+              <li><strong>Benefit 5G:</strong> Priority, Roaming, Poin, Anti-Shock</li>
+              <li><strong>3 Pilar Produk:</strong> Halo Kontrak vs Optima vs Flexy</li>
+              <li><strong>eSIM Fast-Track:</strong> Auto-detect HP 5G</li>
+            </ul>
+          </div>
+          <div class="mt-2 pt-2 border-t border-dashed border-[var(--border)] text-[10px] text-rose-500 font-semibold text-center">
+            Zero Redirect SPA Navigation ➔
+          </div>
+        </div>
+      </div>
+
+      <!-- STAGE 3: PAGE 2 INTENT ENGINE -->
+      <div id="col-3" class="flex flex-col gap-2.5 transition-all duration-300">
+        <div class="text-[11px] font-bold uppercase tracking-wider text-blue-500 flex items-center gap-1">
+          <span class="w-4 h-4 rounded-full bg-blue-100 dark:bg-blue-900/60 text-blue-600 text-[10px] flex items-center justify-center font-mono">3</span>
+          Page 2: Catalog Engine
+        </div>
+
+        <div id="card-new-path" class="p-2.5 rounded-xl border border-blue-200 dark:border-blue-900 bg-blue-50/50 dark:bg-blue-950/20 text-xs">
+          <div class="font-bold text-blue-700 dark:text-blue-300 mb-1 flex items-center justify-between">
+            <span>[Tab Pasang Baru]</span>
+            <span class="text-[9px] bg-blue-100 text-blue-800 font-bold px-1 rounded">Semua Pilar</span>
+          </div>
+          <p class="text-[10.5px] text-slate-600 dark:text-slate-400">Pilihan paket bebas &rarr; Nomor Baru (Acak/Cantik) &rarr; Format SIM.</p>
+        </div>
+
+        <div id="card-p2p-path" class="p-2.5 rounded-xl border border-emerald-200 dark:border-emerald-900 bg-emerald-50/50 dark:bg-emerald-950/20 text-xs">
+          <div class="font-bold text-emerald-700 dark:text-emerald-300 mb-1 flex items-center justify-between">
+            <span>[Tab Pindah ke Halo]</span>
+            <span class="text-[9px] bg-emerald-100 text-emerald-800 font-bold px-1 rounded">Optima Only</span>
+          </div>
+          <p class="text-[10.5px] text-slate-600 dark:text-slate-400 font-medium">Smart ARPU Gatekeeper:</p>
+          <p class="text-[10px] text-emerald-800 dark:text-emerald-300 mt-0.5">Filter sisi server: Hanya render paket &ge; ARPU nomor prabayar.</p>
+        </div>
+      </div>
+
+      <!-- STAGE 4: CHECKOUT & PROVISIONING -->
+      <div id="col-4" class="flex flex-col gap-2.5 transition-all duration-300">
+        <div class="text-[11px] font-bold uppercase tracking-wider text-purple-500 flex items-center gap-1">
+          <span class="w-4 h-4 rounded-full bg-purple-100 dark:bg-purple-900/60 text-purple-600 text-[10px] flex items-center justify-center font-mono">4</span>
+          Checkout & Core
+        </div>
+
+        <div id="card-kyc" class="p-3 rounded-xl border border-[var(--border)] bg-slate-50 dark:bg-slate-800/40 text-xs shadow-sm">
+          <div class="font-bold text-slate-800 dark:text-slate-100 mb-1">In-Browser KYC & Pay</div>
+          <p class="text-[10.5px] text-slate-500 leading-tight">Webcam OCR KTP, validasi Dukcapil API instan, dan QRIS/VA/CC.</p>
+        </div>
+
+        <div id="card-prov" class="p-3 rounded-xl border border-[var(--border)] bg-slate-50 dark:bg-slate-800/40 text-xs shadow-sm">
+          <div class="font-bold text-purple-700 dark:text-purple-300 mb-1">Execution Engine</div>
+          <p class="text-[10.5px] text-slate-500 leading-tight">
+            &bull; <strong>eSIM:</strong> Render QR di web (&lt;2 mnt)<br>
+            &bull; <strong>P2P:</strong> OTA Network Switch seketika
+          </p>
+        </div>
+      </div>
+
+      <!-- STAGE 5: POST-PURCHASE & SAFETY -->
+      <div id="col-5" class="flex flex-col gap-2.5 transition-all duration-300">
+        <div class="text-[11px] font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1">
+          <span class="w-4 h-4 rounded-full bg-slate-200 dark:bg-slate-700 text-[10px] flex items-center justify-center font-mono">5</span>
+          Retensi & Safety
+        </div>
+
+        <div id="card-myt" class="p-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-800 text-xs shadow-sm">
+          <div class="font-bold text-slate-800 dark:text-slate-100 mb-1 flex items-center justify-between">
+            <span>Aplikasi MyTelkomsel</span>
+            <span class="text-[9px] bg-slate-100 text-slate-600 px-1 py-0.5 rounded">Retensi</span>
+          </div>
+          <p class="text-[10.5px] text-slate-500 leading-tight">Sync akun pascabayar: billing, cek kuota harian, & tukar Telkomsel Poin.</p>
+        </div>
+
+        <div id="card-veronika" class="p-3 rounded-xl border border-rose-200 dark:border-rose-900 bg-rose-50/50 dark:bg-rose-950/20 text-xs shadow-sm">
+          <div class="font-bold text-rose-700 dark:text-rose-300 mb-1 flex items-center justify-between">
+            <span>Veronika WhatsApp</span>
+            <span class="text-[9px] bg-rose-100 text-rose-700 px-1 py-0.5 rounded font-bold">Safety-Net</span>
+          </div>
+          <p class="text-[10.5px] text-rose-900 dark:text-rose-200 leading-tight">Otomatis kirim link pemulihan keranjang jika proses KYC/bayar tertunda &gt;15 menit.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Interactive Key Legend Footer -->
+    <div class="mt-4 pt-3 border-t border-[var(--border)] flex flex-wrap items-center justify-between gap-2 text-[11px] text-slate-500">
+      <div class="flex items-center gap-4">
+        <span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-rose-500"></span> Master Showcase (Page 1)</span>
+        <span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span> Pasang Baru Path</span>
+        <span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span> Pre-to-Post ARPU Uplift Path</span>
+      </div>
+      <div class="font-medium text-slate-400">
+        Status: Web-First Architecture Optimized
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function setMode(mode) {
+      // Buttons state
+      const btnAll = document.getElementById('btn-all');
+      const btnNew = document.getElementById('btn-new');
+      const btnP2P = document.getElementById('btn-p2p');
+      const descText = document.getElementById('desc-text');
+
+      [btnAll, btnNew, btnP2P].forEach(btn => {
+        btn.className = "px-3 py-1.5 text-xs font-medium rounded-lg transition-all text-slate-600 dark:text-slate-300 hover:text-rose-600";
+      });
+
+      const activeClass = "px-3 py-1.5 text-xs font-semibold rounded-lg transition-all bg-white dark:bg-slate-700 text-rose-600 shadow-sm";
+
+      // Reset opacity
+      const allCards = ['card-ads', 'card-organic', 'card-crm', 'card-p1', 'card-new-path', 'card-p2p-path', 'card-kyc', 'card-prov', 'card-myt', 'card-veronika'];
+      allCards.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.style.opacity = '1';
+          el.style.filter = 'none';
+        }
+      });
+
+      if (mode === 'all') {
+        btnAll.className = activeClass;
+        descText.innerHTML = "<strong>Mode Semua Alur:</strong> Menampilkan relasi lengkap dari pemicu trafik, Page 1 Showcase, Page 2 Catalog, hingga pemenuhan sistem & retensi.";
+      } else if (mode === 'new') {
+        btnNew.className = activeClass;
+        descText.innerHTML = "<strong>Mode Pasang Baru (eSIM 5G Focus):</strong> Trafik iklan &rarr; Page 1 Hub &rarr; Tab Pasang Baru (semua pilar terbuka) &rarr; Fast-Track QR eSIM di web (&lt;2 menit).";
+        dim(['card-crm', 'card-p2p-path']);
+        highlight(['card-ads', 'card-organic', 'card-p1', 'card-new-path', 'card-kyc', 'card-prov', 'card-myt']);
+      } else if (mode === 'p2p') {
+        btnP2P.className = activeClass;
+        descText.innerHTML = "<strong>Mode Pre-to-Post (Halo Optima):</strong> Blast CRM dengan Tokenized Link &rarr; Langsung ke Page 2 &rarr; Smart ARPU Gatekeeper &rarr; Migrasi Instan Over-The-Air (OTA).";
+        dim(['card-ads', 'card-new-path']);
+        highlight(['card-crm', 'card-p1', 'card-p2p-path', 'card-kyc', 'card-prov', 'card-myt']);
+      }
+    }
+
+    function dim(ids) {
+      ids.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.style.opacity = '0.35';
+          el.style.filter = 'grayscale(60%)';
+        }
+      });
+    }
+
+    function highlight(ids) {
+      ids.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.style.opacity = '1';
+          el.style.filter = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
