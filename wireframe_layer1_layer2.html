@@ -2,25 +2,44 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Wireframe Layer 1 & Layer 2 — Telkomsel Halo Page 1</title>
-  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Layer 1, Layer 2 & eSIM 5G — Telkomsel Halo Hub</title>
+  <!-- Tailwind CDN & Fonts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    code, pre { font-family: 'JetBrains Mono', monospace; }
+  </style>
 </head>
-<body class="bg-transparent text-[var(--foreground)] antialiased p-3 font-sans">
+<body class="bg-slate-50 text-slate-900 antialiased p-3 sm:p-6 min-h-screen">
 
-  <div class="bg-[var(--card)] text-[var(--foreground)] border border-[var(--border)] rounded-2xl p-5 shadow-lg max-w-5xl mx-auto space-y-8">
+  <div class="bg-white border border-slate-200 rounded-3xl p-5 sm:p-8 shadow-xl max-w-5xl mx-auto space-y-10">
     
-    <!-- Wireframe Header Context -->
-    <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-[var(--border)] gap-2">
+    <!-- Top Bar Navigation with Return to Index Link -->
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-5 border-b border-slate-200 gap-4">
       <div>
-        <div class="flex items-center gap-2">
-          <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-rose-100 text-rose-700 tracking-wider uppercase">High-Fidelity Wireframe</span>
+        <div class="flex flex-wrap items-center gap-2 mb-1">
+          <span class="px-2.5 py-0.5 rounded text-[11px] font-bold bg-rose-100 text-rose-700 tracking-wider uppercase">
+            High-Fidelity Wireframe
+          </span>
           <span class="text-xs text-slate-400 font-mono">Page 1 Master Showcase Hub</span>
         </div>
-        <h2 class="text-lg font-extrabold text-[var(--foreground)] mt-1">Anatomi Layer 1 (Privilese Halo) & Layer 2 (3 Pilar Produk)</h2>
+        <h1 class="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight">
+          Anatomi Layer 1, Highlight eSIM 5G, & Layer 2 (3 Pilar Produk)
+        </h1>
+        <p class="text-xs text-slate-500 mt-0.5">
+          Blueprint visualisasi alur benefit pascabayar, akselerator aktivasi instan, dan gateway konversi live
+        </p>
       </div>
-      <div class="text-xs text-slate-500 font-mono bg-slate-100 dark:bg-slate-800 px-3 py-1.5 rounded-lg border border-[var(--border)] self-start sm:self-auto">
-        Scope: Section 3 & 4 (Upgrade Your Life Narrative)
-      </div>
+
+      <!-- Action: Return to Ecosystem Map -->
+      <a href="index.html" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition shadow-sm self-start sm:self-auto border border-slate-300">
+        <span>⬅</span>
+        <span>Kembali ke Peta Ekosistem</span>
+      </a>
     </div>
 
     <!-- ========================================== -->
@@ -33,10 +52,10 @@
             <span class="w-2 h-2 rounded-full bg-rose-600"></span>
             LAYER 1 &bull; WHY POSTPAID? WHY HALO?
           </span>
-          <h3 class="text-xl font-bold text-[var(--foreground)] mt-1">4 Privilese Eksklusif yang Hanya Dimiliki Pelanggan Halo</h3>
-          <p class="text-xs text-[var(--muted-foreground)]">Lebih dari sekadar kuota, rasakan perlakuan prioritas jaringan, layanan VIP, dan gaya hidup prestisius.</p>
+          <h2 class="text-xl font-bold text-slate-900 mt-1">4 Privilese Eksklusif yang Hanya Dimiliki Pelanggan Halo</h2>
+          <p class="text-xs text-slate-500">Lebih dari sekadar kuota, nikmati perlakuan prioritas jaringan, layanan VIP, dan gaya hidup prestisius.</p>
         </div>
-        <div class="text-xs text-slate-500 bg-rose-50 dark:bg-rose-950/30 text-rose-800 dark:text-rose-200 border border-rose-200 dark:border-rose-900 px-3 py-1.5 rounded-lg font-medium">
+        <div class="text-xs text-rose-800 bg-rose-50 border border-rose-200 px-3 py-1.5 rounded-lg font-medium self-start md:self-auto">
           Membangun Justifikasi Nilai (Value Narrative)
         </div>
       </div>
@@ -45,92 +64,161 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
         
         <!-- Privilege 1: Priority 5G & Roaming -->
-        <div class="p-4 rounded-xl border border-[var(--border)] bg-slate-50/60 dark:bg-slate-800/40 hover:border-rose-400 transition-all flex flex-col justify-between group">
+        <div class="p-4 rounded-2xl border border-slate-200 bg-slate-50/70 hover:bg-white hover:border-rose-400 transition-all flex flex-col justify-between group shadow-sm">
           <div>
-            <div class="w-10 h-10 rounded-xl bg-rose-100 dark:bg-rose-950/60 text-rose-600 flex items-center justify-center text-lg font-bold mb-3 group-hover:scale-105 transition-transform">
+            <div class="w-10 h-10 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center text-lg font-bold mb-3 group-hover:scale-105 transition-transform">
               🚀
             </div>
-            <div class="font-bold text-sm text-[var(--foreground)] mb-1">Jaringan Prioritas & Roaming Ready</div>
-            <p class="text-xs text-[var(--muted-foreground)] leading-relaxed">
+            <div class="font-bold text-sm text-slate-900 mb-1">Jaringan Prioritas & Roaming Ready</div>
+            <p class="text-xs text-slate-600 leading-relaxed">
               Alokasi bandwidth 5G prioritas saat BTS padat. Kuota otomatis aktif di <strong>100+ negara</strong> tanpa repot ganti kartu SIM.
             </p>
           </div>
-          <div class="mt-3 pt-2.5 border-t border-[var(--border)] text-[10px] font-semibold text-rose-600">
+          <div class="mt-3 pt-2.5 border-t border-slate-200 text-[10px] font-semibold text-rose-600">
             ✓ 100% Kuota 24 Jam Bebas Bagi Jam
           </div>
         </div>
 
         <!-- Privilege 2: Priority Service CTP -->
-        <div class="p-4 rounded-xl border border-[var(--border)] bg-slate-50/60 dark:bg-slate-800/40 hover:border-blue-400 transition-all flex flex-col justify-between group">
+        <div class="p-4 rounded-2xl border border-slate-200 bg-slate-50/70 hover:bg-white hover:border-blue-400 transition-all flex flex-col justify-between group shadow-sm">
           <div>
-            <div class="w-10 h-10 rounded-xl bg-blue-100 dark:bg-blue-950/60 text-blue-600 flex items-center justify-center text-lg font-bold mb-3 group-hover:scale-105 transition-transform">
+            <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center text-lg font-bold mb-3 group-hover:scale-105 transition-transform">
               👑
             </div>
-            <div class="font-bold text-sm text-[var(--foreground)] mb-1">Priority Service di Seluruh CTP</div>
-            <p class="text-xs text-[var(--muted-foreground)] leading-relaxed">
-              Jalur antrean VIP langsung di seluruh gerai <strong>GraPARI</strong> dan akses sambungan cepat Call Center 188 tanpa antre berbelit.
+            <div class="font-bold text-sm text-slate-900 mb-1">Priority Service di Seluruh CTP</div>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Jalur antrean VIP khusus di seluruh gerai <strong>GraPARI</strong> dan akses sambungan cepat Call Center 188 tanpa antre berbelit.
             </p>
           </div>
-          <div class="mt-3 pt-2.5 border-t border-[var(--border)] text-[10px] font-semibold text-blue-600">
+          <div class="mt-3 pt-2.5 border-t border-slate-200 text-[10px] font-semibold text-blue-600">
             ✓ Dedicated Care Support
           </div>
         </div>
 
         <!-- Privilege 3: Digital Entertainment -->
-        <div class="p-4 rounded-xl border border-[var(--border)] bg-slate-50/60 dark:bg-slate-800/40 hover:border-purple-400 transition-all flex flex-col justify-between group">
+        <div class="p-4 rounded-2xl border border-slate-200 bg-slate-50/70 hover:bg-white hover:border-purple-400 transition-all flex flex-col justify-between group shadow-sm">
           <div>
-            <div class="w-10 h-10 rounded-xl bg-purple-100 dark:bg-purple-950/60 text-purple-600 flex items-center justify-center text-lg font-bold mb-3 group-hover:scale-105 transition-transform">
+            <div class="w-10 h-10 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center text-lg font-bold mb-3 group-hover:scale-105 transition-transform">
               🎬
             </div>
-            <div class="font-bold text-sm text-[var(--foreground)] mb-1">Hardbundle Hiburan Premium</div>
-            <p class="text-xs text-[var(--muted-foreground)] leading-relaxed">
-              Langganan <strong>Disney+ Hotstar & Prime Video</strong> otomatis aktif di dalam paket tanpa biaya tagihan streaming terpisah.
+            <div class="font-bold text-sm text-slate-900 mb-1">Hardbundle Hiburan Premium</div>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Langganan <strong>Disney+ Hotstar & Prime Video</strong> otomatis aktif di dalam paket tanpa tagihan streaming terpisah.
             </p>
           </div>
-          <div class="mt-3 pt-2.5 border-t border-[var(--border)] text-[10px] font-semibold text-purple-600">
+          <div class="mt-3 pt-2.5 border-t border-slate-200 text-[10px] font-semibold text-purple-600">
             ✓ Tagihan All-in-One Praktis
           </div>
         </div>
 
         <!-- Privilege 4: Prestige & MAPrivilege -->
-        <div class="p-4 rounded-xl border border-[var(--border)] bg-slate-50/60 dark:bg-slate-800/40 hover:border-amber-400 transition-all flex flex-col justify-between group">
+        <div class="p-4 rounded-2xl border border-slate-200 bg-slate-50/70 hover:bg-white hover:border-amber-400 transition-all flex flex-col justify-between group shadow-sm">
           <div>
-            <div class="w-10 h-10 rounded-xl bg-amber-100 dark:bg-amber-950/60 text-amber-700 flex items-center justify-center text-lg font-bold mb-3 group-hover:scale-105 transition-transform">
+            <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-lg font-bold mb-3 group-hover:scale-105 transition-transform">
               🛍️
             </div>
-            <div class="font-bold text-sm text-[var(--foreground)] mb-1">Prestige Tier & MAPrivilege</div>
-            <p class="text-xs text-[var(--muted-foreground)] leading-relaxed">
+            <div class="font-bold text-sm text-slate-900 mb-1">Prestige Tier & MAPrivilege</div>
+            <p class="text-xs text-slate-600 leading-relaxed">
               Fast-track keanggotaan <strong>Telkomsel Prestige</strong> (Akses Airport Lounge) & voucher belanja/dining eksklusif <strong>MAP</strong>.
             </p>
           </div>
-          <div class="mt-3 pt-2.5 border-t border-[var(--border)] text-[10px] font-semibold text-amber-700">
+          <div class="mt-3 pt-2.5 border-t border-slate-200 text-[10px] font-semibold text-amber-700">
             ✓ Airport Lounge & MAP Voucher
           </div>
         </div>
 
       </div>
 
-      <!-- Zero Bill Shock Guarantee Banner (De-risking Dealbreaker) -->
-      <div class="p-3.5 rounded-xl border border-emerald-200 dark:border-emerald-900 bg-emerald-50/70 dark:bg-emerald-950/30 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+      <!-- Zero Bill Shock Guarantee Banner -->
+      <div class="p-4 rounded-2xl border border-emerald-200 bg-emerald-50/80 flex flex-col sm:flex-row sm:items-center justify-between gap-3 shadow-sm">
         <div class="flex items-start sm:items-center gap-3">
-          <div class="w-8 h-8 rounded-full bg-emerald-100 dark:bg-emerald-900 text-emerald-700 flex items-center justify-center font-bold text-sm flex-shrink-0">
+          <div class="w-9 h-9 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-base flex-shrink-0">
             🛡️
           </div>
           <div>
-            <div class="font-bold text-xs text-emerald-950 dark:text-emerald-100">Jaminan Zero Bill Shock (Bebas Cemas Tagihan Meledak)</div>
-            <p class="text-[11px] text-emerald-800 dark:text-emerald-300">
-              Setiap nomor Halo dilengkapi fitur <strong>Credit Limit Control</strong> transparan. Tagihan bulanan terkunci pasti tanpa biaya tersembunyi.
+            <div class="font-bold text-xs text-emerald-950">Jaminan Zero Bill Shock (Bebas Cemas Tagihan Meledak)</div>
+            <p class="text-[11px] text-emerald-800 leading-snug">
+              Setiap nomor Halo dilengkapi fitur <strong>Credit Limit Control</strong> transparan. Tagihan bulanan Anda terkunci pasti tanpa biaya tersembunyi.
             </p>
           </div>
         </div>
-        <div class="text-[10px] font-bold text-emerald-700 dark:text-emerald-300 uppercase tracking-wider bg-white dark:bg-slate-800 px-2.5 py-1 rounded border border-emerald-200 dark:border-emerald-800 self-start sm:self-auto">
+        <div class="text-[10px] font-bold text-emerald-800 uppercase tracking-wider bg-white px-3 py-1 rounded-lg border border-emerald-200 shadow-sm self-start sm:self-auto">
           100% Bill Protection
         </div>
       </div>
     </section>
 
-    <!-- Divider -->
-    <hr class="border-[var(--border)]">
+    <!-- ========================================== -->
+    <!-- SECTION BARU: HIGHLIGHT FAST-TRACK eSIM 5G  -->
+    <!-- ========================================== -->
+    <section class="p-5 sm:p-6 rounded-3xl bg-gradient-to-br from-slate-900 via-slate-800 to-rose-950 text-white shadow-xl relative overflow-hidden">
+      <!-- Decorative Glow -->
+      <div class="absolute -right-10 -bottom-10 w-64 h-64 bg-rose-600/20 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="relative z-10 space-y-5">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-700/60 pb-3">
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span class="text-xs font-bold uppercase tracking-wider text-rose-400 font-mono">DIGITAL CONVERSION ACCELERATOR</span>
+          </div>
+          <span class="text-xs bg-slate-800 px-3 py-1 rounded-full text-slate-300 border border-slate-700 font-mono">
+            Tanpa Tunggu Kurir &bull; Aktif &lt; 2 Menit
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+          <div class="lg:col-span-7 space-y-3">
+            <h3 class="text-xl sm:text-2xl font-black tracking-tight leading-tight">
+              Aktivasi Instan eSIM 5G: Langsung Terbit di Layar Tanpa Kartu Fisik
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              Miliki smartphone 5G flagship (iPhone 14/15/16, Samsung Galaxy S/Z Series, Google Pixel)? Nikmati seluruh privilese Telkomsel Halo seketika tanpa perlu menunggu pengiriman kartu fisik.
+            </p>
+
+            <!-- 3-Step Micro Funnel -->
+            <div class="grid grid-cols-3 gap-2 pt-2">
+              <div class="bg-slate-800/80 p-2.5 rounded-xl border border-slate-700 text-center">
+                <div class="text-base font-bold text-rose-400 mb-0.5">1</div>
+                <div class="font-bold text-[11px] text-white">Cek Tipe HP</div>
+                <div class="text-[9px] text-slate-400">Auto-detect EID</div>
+              </div>
+              <div class="bg-slate-800/80 p-2.5 rounded-xl border border-slate-700 text-center">
+                <div class="text-base font-bold text-rose-400 mb-0.5">2</div>
+                <div class="font-bold text-[11px] text-white">Pilih Paket Halo</div>
+                <div class="text-[9px] text-slate-400">Verifikasi NIK/KK</div>
+              </div>
+              <div class="bg-slate-800/80 p-2.5 rounded-xl border border-slate-700 text-center">
+                <div class="text-base font-bold text-emerald-400 mb-0.5">3</div>
+                <div class="font-bold text-[11px] text-emerald-300">Scan QR Aktif!</div>
+                <div class="text-[9px] text-slate-400">Langsung Konek 5G</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Action Card -->
+          <div class="lg:col-span-5 bg-white/10 backdrop-blur-md p-4 rounded-2xl border border-white/15 space-y-3">
+            <div class="flex items-center justify-between text-xs">
+              <span class="text-slate-300 font-medium">Status Perangkat Anda:</span>
+              <span class="text-emerald-400 font-bold flex items-center gap-1">
+                <span>✓</span> Siap eSIM 5G
+              </span>
+            </div>
+
+            <div class="text-[11px] text-slate-300 bg-black/20 p-2.5 rounded-xl border border-white/10 space-y-1">
+              <div class="font-bold text-white">Keunggulan Format eSIM:</div>
+              <div>&bull; <strong>Zero Drop-off</strong>: Melewati form alamat & kendala logistik</div>
+              <div>&bull; <strong>Dual SIM Aktif</strong>: Nomor Halo pascabayar berdampingan dengan nomor prabayar lama</div>
+            </div>
+
+            <!-- Direct CTA to Official PSB eSIM / Halo -->
+            <a href="https://my.telkomsel.com/v2/psb/dapatkan-nomor-pascabayar?type=kartu+sim" target="_blank" class="w-full py-2.5 px-4 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-bold text-xs shadow-lg transition flex items-center justify-center gap-2 group">
+              <span>Dapatkan eSIM 5G Halo Sekarang ⚡</span>
+              <span class="group-hover:translate-x-1 transition-transform">➔</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- ========================================== -->
     <!-- LAYER 2: 3-PRODUCT PILLAR SHOWCASE -->
@@ -142,44 +230,44 @@
             <span class="w-2 h-2 rounded-full bg-blue-600"></span>
             LAYER 2 &bull; PRODUCT PORTFOLIO REALIGNMENT
           </span>
-          <h3 class="text-xl font-bold text-[var(--foreground)] mt-1">Pilih Gaya Pascabayar yang Tepat untuk Anda</h3>
-          <p class="text-xs text-[var(--muted-foreground)]">3 pilar terstruktur yang mengeliminasi kebingungan puluhan paket lama menjadi 3 pilihan hidup pasti.</p>
+          <h2 class="text-xl font-bold text-slate-900 mt-1">Pilih Gaya Pascabayar yang Tepat untuk Anda</h2>
+          <p class="text-xs text-slate-500">3 pilar terstruktur yang mengeliminasi kebingungan puluhan paket lama menjadi 3 pilihan hidup pasti.</p>
         </div>
 
         <!-- Filter Selector -->
-        <div class="flex items-center gap-1 bg-slate-100 dark:bg-slate-800 p-1 rounded-xl border border-[var(--border)] text-xs">
-          <button id="pill-all" onclick="filterPillar('all')" class="px-2.5 py-1 font-semibold rounded-lg bg-white dark:bg-slate-700 text-blue-600 shadow-sm transition">
+        <div class="flex items-center gap-1 bg-slate-100 p-1 rounded-xl border border-slate-200 text-xs">
+          <button id="pill-all" onclick="filterPillar('all')" class="px-3 py-1 font-semibold rounded-lg bg-white text-blue-600 shadow-sm transition">
             Semua Pilar
           </button>
-          <button id="pill-kontrak" onclick="filterPillar('kontrak')" class="px-2.5 py-1 font-medium text-slate-500 hover:text-blue-600 transition">
+          <button id="pill-kontrak" onclick="filterPillar('kontrak')" class="px-3 py-1 font-medium text-slate-600 hover:text-blue-600 transition">
             📱 Bundling HP
           </button>
-          <button id="pill-optima" onclick="filterPillar('optima')" class="px-2.5 py-1 font-medium text-slate-500 hover:text-blue-600 transition">
+          <button id="pill-optima" onclick="filterPillar('optima')" class="px-3 py-1 font-medium text-slate-600 hover:text-blue-600 transition">
             👑 Kuota Masif
           </button>
-          <button id="pill-flexy" onclick="filterPillar('flexy')" class="px-2.5 py-1 font-medium text-slate-500 hover:text-blue-600 transition">
+          <button id="pill-flexy" onclick="filterPillar('flexy')" class="px-3 py-1 font-medium text-slate-600 hover:text-blue-600 transition">
             ⚖️ Anti-Boncos
           </button>
         </div>
       </div>
 
-      <!-- 3 Pillar Comparison Cards -->
+      <!-- 3 Pillar Comparison Cards with Exact CTAs -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
         
         <!-- Pillar 1: Halo Kontrak -->
-        <div id="card-kontrak" class="rounded-2xl border-2 border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-800/80 p-5 flex flex-col justify-between shadow-sm hover:border-rose-400 transition-all">
+        <div id="card-kontrak" class="rounded-2xl border-2 border-slate-200 bg-white p-5 flex flex-col justify-between shadow-sm hover:border-rose-400 transition-all">
           <div>
             <div class="flex items-center justify-between mb-3">
               <span class="text-xs font-bold text-rose-600 uppercase tracking-wider">Pilar 1: Gadget Deal</span>
               <span class="text-[9px] bg-rose-100 text-rose-800 font-bold px-2 py-0.5 rounded-full">Eksklusif Pasang Baru</span>
             </div>
-            <h4 class="text-lg font-extrabold text-[var(--foreground)] mb-1">Halo Kontrak</h4>
+            <h3 class="text-lg font-extrabold text-slate-900 mb-1">Halo Kontrak</h3>
             <p class="text-xs text-rose-600 font-medium mb-3">Bundling Smartphone Flagship & Diskon</p>
-            <p class="text-xs text-[var(--muted-foreground)] leading-relaxed mb-4">
+            <p class="text-xs text-slate-500 leading-relaxed mb-4">
               Pilihan ideal bagi yang ingin mengganti smartphone ke <strong>iPhone 15/16</strong> atau <strong>Samsung Galaxy S/Z Series</strong> dengan paket hemat.
             </p>
 
-            <div class="space-y-2 py-3 border-y border-[var(--border)] text-xs text-slate-600 dark:text-slate-300">
+            <div class="space-y-2 py-3 border-y border-slate-100 text-xs text-slate-600">
               <div class="flex items-center gap-2">
                 <span class="text-rose-500 font-bold">✓</span>
                 <span>Hemat s/d 40% biaya paket bulanan</span>
@@ -195,17 +283,24 @@
             </div>
           </div>
 
-          <div class="mt-5">
-            <div class="text-[11px] text-slate-400 mb-2">Mulai dari komitmen 12 - 24 bulan</div>
-            <button class="w-full py-2.5 px-4 rounded-xl bg-slate-900 dark:bg-slate-100 hover:bg-rose-600 text-white dark:text-slate-900 dark:hover:bg-rose-600 dark:hover:text-white font-bold text-xs transition flex items-center justify-center gap-1.5">
+          <div class="mt-5 space-y-2">
+            <div class="text-[11px] text-slate-400">Komitmen 12 - 24 bulan</div>
+            
+            <!-- Button A: Link Resmi Halo Kontrak -->
+            <a href="https://www.telkomsel.com/halo/kontrakhalo" target="_blank" class="w-full py-2.5 px-4 rounded-xl bg-slate-900 hover:bg-rose-600 text-white font-bold text-xs transition flex items-center justify-center gap-1.5 shadow-sm">
               <span>Lihat Paket Halo Kontrak</span>
               <span>➔</span>
-            </button>
+            </a>
+
+            <!-- Button B: Upgrade / Migrasi Direct Link -->
+            <a href="https://www.telkomsel.com/migrate/package" target="_blank" class="w-full py-2 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-[11px] transition flex items-center justify-center gap-1 border border-slate-200">
+              <span>🔄 Upgrade Nomor Lama ke Halo</span>
+            </a>
           </div>
         </div>
 
         <!-- Pillar 2: Halo Optima (Hero/Popular) -->
-        <div id="card-optima" class="rounded-2xl border-2 border-rose-500 bg-white dark:bg-slate-800 p-5 flex flex-col justify-between shadow-md relative">
+        <div id="card-optima" class="rounded-2xl border-2 border-rose-500 bg-white p-5 flex flex-col justify-between shadow-md relative">
           <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-rose-600 text-white text-[10px] font-bold px-3 py-0.5 rounded-full uppercase tracking-wider shadow">
             Paling Populer &bull; Support Migrasi
           </div>
@@ -214,13 +309,13 @@
               <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">Pilar 2: Pascabayar Murni</span>
               <span class="text-[9px] bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded-full">Baru & P2P (Nomor Lama)</span>
             </div>
-            <h4 class="text-lg font-extrabold text-[var(--foreground)] mb-1">Halo Optima (Reguler)</h4>
+            <h3 class="text-lg font-extrabold text-slate-900 mb-1">Halo Optima (Reguler)</h3>
             <p class="text-xs text-blue-600 font-medium mb-3">Kuota Data Terbesar & Akses Prioritas 5G</p>
-            <p class="text-xs text-[var(--muted-foreground)] leading-relaxed mb-4">
+            <p class="text-xs text-slate-500 leading-relaxed mb-4">
               Pascabayar sejati untuk profesional dan pengguna aktif yang menginginkan konektivitas stabil, bebas roaming, dan hiburan lengkap.
             </p>
 
-            <div class="space-y-2 py-3 border-y border-[var(--border)] text-xs text-slate-600 dark:text-slate-300">
+            <div class="space-y-2 py-3 border-y border-slate-100 text-xs text-slate-600">
               <div class="flex items-center gap-2">
                 <span class="text-rose-500 font-bold">✓</span>
                 <span>Kuota masif 100% 24 jam tanpa bagi jam</span>
@@ -236,29 +331,36 @@
             </div>
           </div>
 
-          <div class="mt-5">
-            <div class="text-[11px] text-slate-400 mb-2">Mulai Rp100.000 / bulan</div>
-            <button class="w-full py-2.5 px-4 rounded-xl bg-rose-600 hover:bg-rose-700 text-white font-bold text-xs shadow-md transition flex items-center justify-center gap-1.5">
-              <span>Pilih Paket Halo Optima</span>
+          <div class="mt-5 space-y-2">
+            <div class="text-[11px] text-slate-400">Mulai Rp100.000 / bulan</div>
+
+            <!-- Button A: Link Resmi Pasang Baru Optima -->
+            <a href="https://my.telkomsel.com/v2/psb/dapatkan-nomor-pascabayar?type=kartu+sim" target="_blank" class="w-full py-2.5 px-4 rounded-xl bg-rose-600 hover:bg-rose-700 text-white font-bold text-xs shadow-md transition flex items-center justify-center gap-1.5">
+              <span>Pasang Baru Halo Optima</span>
               <span>➔</span>
-            </button>
+            </a>
+
+            <!-- Button B: Upgrade / Migrasi Direct Link -->
+            <a href="https://www.telkomsel.com/migrate/package" target="_blank" class="w-full py-2 px-3 rounded-xl bg-rose-50 hover:bg-rose-100 text-rose-700 font-bold text-[11px] transition flex items-center justify-center gap-1 border border-rose-200">
+              <span>🔄 Upgrade Nomor Lama (P2P Optima)</span>
+            </a>
           </div>
         </div>
 
         <!-- Pillar 3: Halo Flexy -->
-        <div id="card-flexy" class="rounded-2xl border-2 border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-800/80 p-5 flex flex-col justify-between shadow-sm hover:border-emerald-400 transition-all">
+        <div id="card-flexy" class="rounded-2xl border-2 border-slate-200 bg-white p-5 flex flex-col justify-between shadow-sm hover:border-emerald-400 transition-all">
           <div>
             <div class="flex items-center justify-between mb-3">
               <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider">Pilar 3: Smart Budget</span>
               <span class="text-[9px] bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded-full">Eksklusif Pasang Baru</span>
             </div>
-            <h4 class="text-lg font-extrabold text-[var(--foreground)] mb-1">Halo Flexy</h4>
+            <h3 class="text-lg font-extrabold text-slate-900 mb-1">Halo Flexy</h3>
             <p class="text-xs text-emerald-600 font-medium mb-3">Kontrol Budget Ketat & Anti-Boncos</p>
-            <p class="text-xs text-[var(--muted-foreground)] leading-relaxed mb-4">
+            <p class="text-xs text-slate-500 leading-relaxed mb-4">
               Dirancang khusus bagi pengguna prabayar yang ingin transisi ke pascabayar dengan kepastian biaya tetap tanpa kejutan tagihan.
             </p>
 
-            <div class="space-y-2 py-3 border-y border-[var(--border)] text-xs text-slate-600 dark:text-slate-300">
+            <div class="space-y-2 py-3 border-y border-slate-100 text-xs text-slate-600">
               <div class="flex items-center gap-2">
                 <span class="text-emerald-500 font-bold">✓</span>
                 <span>Pagu batas tagihan (Credit Limit) terkunci</span>
@@ -274,26 +376,31 @@
             </div>
           </div>
 
-          <div class="mt-5">
-            <div class="text-[11px] text-slate-400 mb-2">Mulai Rp80.000 / bulan</div>
-            <button class="w-full py-2.5 px-4 rounded-xl bg-slate-900 dark:bg-slate-100 hover:bg-emerald-600 text-white dark:text-slate-900 dark:hover:bg-emerald-600 dark:hover:text-white font-bold text-xs transition flex items-center justify-center gap-1.5">
-              <span>Lihat Paket Halo Flexy</span>
+          <div class="mt-5 space-y-2">
+            <div class="text-[11px] text-slate-400">Mulai Rp80.000 / bulan</div>
+
+            <!-- Button A: Link Resmi Halo Flexy News/Portal -->
+            <a href="https://www.telkomsel.com/about-us/news/telkomsel-perkenalkan-halo-flexy-pascabayar-lebih-fleksibel-dan-terkendali-sudah" target="_blank" class="w-full py-2.5 px-4 rounded-xl bg-slate-900 hover:bg-emerald-600 text-white font-bold text-xs transition flex items-center justify-center gap-1.5 shadow-sm">
+              <span>Beli Paket Halo Flexy</span>
               <span>➔</span>
-            </button>
+            </a>
+
+            <!-- Button B: Upgrade / Migrasi Direct Link -->
+            <a href="https://www.telkomsel.com/migrate/package" target="_blank" class="w-full py-2 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-[11px] transition flex items-center justify-center gap-1 border border-slate-200">
+              <span>🔄 Upgrade Nomor Lama ke Halo</span>
+            </a>
           </div>
         </div>
 
       </div>
 
-      <!-- Live SPA Handoff Indicator -->
-      <div class="p-3 rounded-xl bg-slate-100 dark:bg-slate-800 border border-[var(--border)] flex items-center justify-between text-xs text-slate-500">
-        <div class="flex items-center gap-2">
-          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-          <span><strong>Next.js SPA Transition:</strong> Setiap tombol CTA mengarahkan langsung ke URL Page 2 dengan deep query parameter (misal: <code>/katalog?pillar=optima</code>) tanpa jeda reload browser.</span>
-        </div>
-        <span class="font-mono text-[10px] text-slate-400 hidden sm:inline">&lt; 100ms Latency</span>
-      </div>
     </section>
+
+    <!-- Footer Meta -->
+    <div class="pt-4 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-400">
+      <span>Telkomsel Halo Hub Information Architecture Wireframe</span>
+      <span>Live Preview &bull; Sync with Telkomsel.com Ecosystem</span>
+    </div>
 
   </div>
 
@@ -305,8 +412,8 @@
       const pOptima = document.getElementById('pill-optima');
       const pFlexy = document.getElementById('pill-flexy');
 
-      const normal = "px-2.5 py-1 font-medium text-slate-500 hover:text-blue-600 transition";
-      const active = "px-2.5 py-1 font-semibold rounded-lg bg-white dark:bg-slate-700 text-blue-600 shadow-sm transition";
+      const normal = "px-3 py-1 font-medium text-slate-600 hover:text-blue-600 transition";
+      const active = "px-3 py-1 font-semibold rounded-lg bg-white text-blue-600 shadow-sm transition";
 
       pAll.className = normal;
       pKontrak.className = normal;
@@ -320,7 +427,6 @@
       [cKontrak, cOptima, cFlexy].forEach(c => {
         c.style.opacity = '1';
         c.style.transform = 'scale(1)';
-        c.style.display = 'flex';
       });
 
       if (type === 'all') {
